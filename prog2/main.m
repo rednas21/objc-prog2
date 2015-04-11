@@ -55,11 +55,16 @@ int main (int argc, char * argv[])
 {
     @autoreleasepool {
         Fraction *myFraction = [Fraction new];
+        Fraction *yourFraction = [Fraction new];
         
         [myFraction setNumerator: 7];
         [myFraction setDenominator: 8];
         
+        [yourFraction setNumerator: 1];
+        [yourFraction setDenominator: 2];
+        
         NSLog(@"The value of my fraction is: %i/%i", [myFraction numerator], [myFraction denominator]);
+        NSLog(@"The value of your fraction is: %i/%i", [yourFraction numerator], [yourFraction denominator]);
     }
     
     return 0;
